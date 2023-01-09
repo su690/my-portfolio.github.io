@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+:root {
+--primary-bg-color:#1c2833;
+--secondary-bg-color:#212f3d;
+--txt-white:#fff;
+--primary-color:#28b463;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:"Montserrat",sans-serif;
+}
+a {
+    color: var(--txt-white);
+}
+header {
+    color: var(--txt-white);
+    background: var(--secondary-bg-color);
+    font-size: 1.2rem;
+    min-height: 100vh;
+    width: 100%;
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: var(--primary-bg-color);
+    height: 80px;
+}
+
+nav ui {
+    display: flex;
+    list-style: none;
+}
+
+nav ui li{
+    padding: 1.5rem 0.5rem;
+    margin: 0 1.4rem;
+    position: relative;
+}
+nav ui li a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: var(--primary-color);
+    width: 0%;
+    left: 0%;
+    top: 60%;
+    transition: all 0.3s;
+
+}
+nav ui li a:hover:after{
+    width: 100%;
+
+}
+.Social-icons a{
+    padding: 0 1rem;
+    transition: all 0.3s;
+}
+.Social-icons a:hover {
+color:var(--primary-color);
+
+}
+.logo {
+    color: var(--primary-color);
+
+}
+/* navbar close */
+/* Showcase Start */
+.content-wrapper {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height:84vh;
+    padding: 0 10%;
+
+}
+.content-left{
+    width: 70%;
+}
+.content-left.lead{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.txt-content {
+    display:flex;
+    width:100%;
+}
+.normal_txt{
+    font-size: 3.5rem;
+    width: 15%;
+}
+.change_txt {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.content-left p{
+    font-size: 1 rem;
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+.content-left button{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 2rem 2rem 0 0;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius:  02px;
+}
+.content-left button:hover {
+   background: var(--primary-color);
+   border: none;
+   padding: 1 rem 3 rem;
+   
+    transition: all 0.3s;
+}
+content-left button:active{
+    transform: scale(0.95);
+}
+
+/*skill start */
+.Skills{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background: var(--primary-bg-color);
+    
+    width: 100%;
+    padding: 0 01%;
+}
+.Skills h2{
+    font-size: 2.8rem;
+    padding: 0.5rem 0;
+    color: var(--primary-color);
+
+}
+.Skills i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+.Skills.html{
+    color: red;
+}
+.Skills .css3{
+    color: #1572b6;
+}
+.Skills.js{
+    color: yellow;
+}
+.Skills .react{
+    color: brown;
+}
+.Skills .java{
+    color: aqua;
+}
+.Skills .python{
+    color: blue;
+}
+
+/*skill close */
+/* showcase close */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
