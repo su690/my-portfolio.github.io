@@ -12,6 +12,7 @@
     padding: 0;
     text-decoration: none;
     font-family:"Montserrat",sans-serif;
+    overflow: hidden;
 }
 a {
     color: var(--txt-white);
@@ -100,6 +101,21 @@ color:var(--primary-color);
     font-size: 3.5rem;
     color: var(--primary-color);
     font-weight: 600;
+    position: relative;
+
+}
+.txt-content .change_txt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left:2px solid var(--secondary-bg-color) ;
+    /*background: rgba(0,0,0,1);*/
+    background: var(--secondary-bg-color);
+    animation: animateTxt 5s steps(25) infinite;
+
 }
 .content-left p{
     font-size: 1 rem;
@@ -127,6 +143,12 @@ color:var(--primary-color);
 content-left button:active{
     transform: scale(0.95);
 }
+.content-right{
+    /*transform:skew(-3deg);*/
+    animation: imgAnimate 5s forwards;
+   transform:translateX(500px);
+
+}
 
 /*skill start */
 .Skills{
@@ -137,6 +159,8 @@ content-left button:active{
     
     width: 100%;
     padding: 0 01%;
+    
+
 }
 .Skills h2{
     font-size: 2.8rem;
@@ -148,7 +172,7 @@ content-left button:active{
     font-size: 3rem;
     cursor: pointer;
 }
-.Skills.html{
+.Skills .html{
     color: red;
 }
 .Skills .css3{
@@ -168,6 +192,28 @@ content-left button:active{
 }
 
 /*skill close */
+@keyframes imgAnimate
+{
+    to{
+        transform: translateX(0);
+        transform: skew(-3deg);
+    }
+}
+@keyframes animateTxt{
+    3%{
+        left: 0;
+
+    }
+    30%{
+        left: 100%;
+    }
+    80%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
 /* showcase close */
 
 
